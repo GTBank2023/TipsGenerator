@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial Tips Modal</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Tips Modal</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button id="open-modal-btn">Show Financial Tip</button>
+  <!-- Your original button with absolute positioning -->
+  <button id="open-modal-btn">Show Financial Tip</button>
 
-    <div id="tip-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <div id="tip-content"></div>
-            <div id="cta"></div>
-        </div>
+  <!-- Modal Container -->
+  <div id="tip-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <!-- This section displays the tip image -->
+      <div id="tip-content"></div>
+      <!-- This section displays the bank-related CTA -->
+      <div id="cta"></div>
+      <!-- This section displays the WhatsApp Broadcast Channel CTA -->
+      <div id="whatsapp-cta"></div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
