@@ -1,0 +1,124 @@
+/* Global Body Styles */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove padding so the background fills the screen */
+    min-height: 100vh; /* Ensure the background covers the full viewport height */
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("https://i.imgur.com/tMmj5J9.jpeg"); /* Replace with your cover image link */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-repeat: no-repeat;
+    background-position: center; /* Keeps the image centered */
+    /* background-attachment: fixed; Uncomment if you want a fixed background */
+}
+
+/* General Button Styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Positionable Modal Button */
+#open-modal-btn {
+    position: absolute; /* Allows you to manually reposition the button */
+    top: 200px;   /* Adjust vertical position as needed */
+    left: 360px;  /* Adjust horizontal position as needed */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #dc4405;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button Hover State */
+#open-modal-btn:hover {
+    background-color: #808080;
+}
+
+/* Modal Overlay Styling */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content Styling */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Close Button Styling */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Close Button Hover & Focus */
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Tip Image Styling */
+.tip-image {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+/* Call-to-Action (CTA) Link Styling */
+#cta a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #dc4405;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* CTA Hover State */
+#cta a:hover {
+    background-color: #808080;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #open-modal-btn {
+        top: 150px;      /* Adjust vertical position for tablet screens */
+        left: 50%;       /* Center horizontally */
+        transform: translateX(-50%);
+    }
+    .modal-content {
+        width: 90%;
+        margin: 20% auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #open-modal-btn {
+        top: 120px; /* Further adjust for smaller screens */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
