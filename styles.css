@@ -2,7 +2,7 @@
 body {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove padding so the background fills the screen */
-    min-height: 100vh; /* Ensure the background covers the full viewport height */
+    min-height: 100vh; /* Full viewport height */
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -10,33 +10,27 @@ body {
     background-size: cover; /* Ensures the image covers the entire screen */
     background-repeat: no-repeat;
     background-position: center; /* Keeps the image centered */
-    /* background-attachment: fixed; Uncomment if you want a fixed background */
+    background-attachment: fixed; /* Optional: keeps background fixed on scroll */
 }
 
-/* General Button Styling */
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* Positionable Modal Button */
+/* Modal Button Styling */
 #open-modal-btn {
-    position: absolute; /* Allows you to manually reposition the button */
-    top: 200px;   /* Adjust vertical position as needed */
-    left: 360px;  /* Adjust horizontal position as needed */
+    display: inline-block;
+    margin-top: 750px;
+    margin-left: 60px;
     padding: 10px 20px;
-    font-size: 16px;
     background-color: #dc4405;
     color: white;
+    text-decoration: none;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-/* Button Hover State */
 #open-modal-btn:hover {
-    background-color: #808080;
+    background-color: #808080; /* Change to your desired hover color */
 }
 
 /* Modal Overlay Styling */
@@ -72,7 +66,6 @@ button {
     cursor: pointer;
 }
 
-/* Close Button Hover & Focus */
 .close-btn:hover,
 .close-btn:focus {
     color: black;
@@ -97,9 +90,24 @@ button {
     border-radius: 5px;
 }
 
-/* CTA Hover State */
 #cta a:hover {
     background-color: #808080;
+}
+
+/* WhatsApp CTA Button Styling */
+#whatsapp-cta a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#whatsapp-cta a:hover {
+    background-color: #128C7E;
 }
 
 /* Responsive Adjustments */
