@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // WhatsApp Broadcast Channel Button (updated)
         const whatsappLink = "https://whatsapp.com/channel/your-invite-code"; // Replace with your actual channel invite link
-        whatsappCTA.innerHTML = `<a href="${whatsappLink}" target="_blank">📲 Join Our WhatsApp Channel</a>`;
+        whatsappCTA.innerHTML = `<a href="https://whatsapp.com/channel/0029Vb9ps0cCcW4joNDRTH2a" target="_blank">📲 Join Our WhatsApp Channel</a>`;
     }
 
     openModalBtn.addEventListener("click", () => {
